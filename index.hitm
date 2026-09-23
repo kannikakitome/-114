@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>マイ・ブラウザアプリ</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; marginTop: 100px; background: #f0f0f0; }
+        button { font-size: 24px; padding: 10px 20px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 5px; }
+        p { font-size: 48px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>ボタンクリックカウンター</h1>
+    <p id="counter">0</p>
+    <button onclick="countUp()">クリックしてね！</button>
+
+    <script>
+        let count = 0;
+        function countUp() {
+            count++;
+            document.getElementById('counter').innerText = count;
+        }
+    </script>
+</body>
+</html>
